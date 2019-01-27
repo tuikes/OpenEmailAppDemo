@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/open_email_app"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="#f00"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="打开邮件"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/email_send_one"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/email_send_one"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#f00"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="发送邮件（姿势1）"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/email_send_two"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/open_email_app"/>
+
+    <TextView
+        android:id="@+id/email_send_two"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#f00"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="发送邮件（姿势2）"
+        android:textColor="#fff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_send_one"/>
+
+</android.support.constraint.ConstraintLayout>
